@@ -1,0 +1,2 @@
+option('platform', type : 'combo', choices : ['windows', 'windows_universal'], value : 'windows', yield : true)
+option('arch', type : 'combo', choices : ['x64', 'x86', 'any'], value : 'x64', yield : true)
