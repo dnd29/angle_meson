@@ -1,4 +1,4 @@
-project('angle', 'c')
+project('angle', 'c', version: '1c0bcb06e36fe6920fb09512bcfe7519fe1bcbb2')
 
 # 옵션 가져오기
 target_platform = get_option('platform')
@@ -6,6 +6,8 @@ message('Target platform: ' + target_platform)
 target_arch = get_option('arch')
 if target_arch == 'any'
 	target_arch = 'x64'
+else target_arch == 'arm64-v8a'
+	target_arch = 'ARM64'
 endif
 buildtype = get_option('buildtype')
 
